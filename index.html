@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#10102b" />
+  <meta name="description" content="손으로 완성하는 신기한 대칭의 세계! 초등 수학 동작 인식 게임 대칭 마법사" />
+  <title>대칭 마법사 | 손으로 완성하는 대칭의 세계</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css?v=7.0" />
+  <script src="./app.js?v=7.0" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-action="home" aria-label="대칭 마법사 처음 화면으로"><span class="brand-mark">✦</span><span>대칭<span class="brand-accent">마법사</span></span><span class="brand-sub">SYMMETRY WIZARD</span></button>
+      <div id="headerGameInfo" class="header-game-info" aria-label="현재 챕터와 진행 정보"></div>
+      <nav class="nav-actions" aria-label="주 메뉴">
+        <span id="modeIndicator" class="mode-indicator">✦ 반짝이는 수학 모험</span>
+        <button class="nav-button" data-action="help" aria-label="게임 방법">ⓘ <span>게임 방법</span></button>
+        <button class="nav-button" data-action="settings" aria-label="설정">⚙ <span>설정</span></button>
+      </nav>
+    </header>
+    <main id="screen" class="screen"></main>
+    <footer class="site-footer"><span>✦ 대칭의 원리를 몸으로 발견해요</span><span>카메라 영상은 저장하거나 업로드하지 않습니다.</span></footer>
+  </div>
+  <div id="modalRoot" aria-live="polite"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="handUiCursor" class="hand-ui-cursor" aria-hidden="true"><span class="hand-ui-core">☝</span><span class="hand-ui-ring"></span></div>
+  <video id="cameraVideo" autoplay playsinline muted aria-label="카메라 미리보기"></video>
+</body>
+</html>
